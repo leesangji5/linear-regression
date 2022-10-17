@@ -36,8 +36,7 @@ for i in range(len(test_data_x)):
     ys += abs(test_data_y[i] - (w * test_data_x[i] + b)) / test_data_y[i]
 
 print((1-ys / len(test_data_x)) * 100)
-"""
+
 plt.scatter(test_data_x, test_data_y)
 plt.plot([min(test_data_x), max(test_data_x)], [min(y_pred), max(y_pred)], color='red')
 plt.show()
-"""
